@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "title": "SecurePort Scanner",
+      "description": "A network port scanner with integrated vulnerability detection capabilities.",
+      "techStack": ["Python", "Security", "Networking"],
+      "github": "https://github.com/johngarnsey/secureport-scanner"
+    },
+    {
+      "id": 2,
+      "title": "React Portfolio",
+      "description": "A portfolio website built with React to showcase projects and skills.",
+      "techStack": ["React", "JavaScript", "CSS"],
+      "github": "https://github.com/johngarnsey/react-portfolio"
+    },
+    {
+        "id": 3,
+        "title": "File Encryption - M.S. Final Project",
+        "description": "A Windows file encryption program built to showcase skills and concepts.",
+        "techStack": ["Python", "C#", "PowerShell"],
+        "github": "https://github.com/johngarnsey/Ecryption-Decryption-Project"
+      }
+  ]
+  
