@@ -6,7 +6,6 @@ import '../styles/about.css';
 function About() {
   return (
     <div className="about-page">
-      <Header />
       <main className="about-content">
         <h1>About Me</h1>
         <p>
@@ -16,7 +15,6 @@ function About() {
           I enjoy working on projects that blend technology and creativity, building modern, responsive web applications.
         </p>
       </main>
-      <Footer />
     </div>
   );
 }

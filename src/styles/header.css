@@ -1,7 +1,28 @@
-.header {
-    background-color: #34282c;
-    color: white;
+  .header {
+    background-color: var(--primary-color);
     padding: 10px 20px;
+  }
+  
+  .header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header nav ul li {
+    margin: 0 15px;
+  }
+  
+  .header nav ul li a {
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .header nav ul li a:hover {
+    color: var(--accent-color);
   }
   
   .navbar {

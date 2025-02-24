@@ -4,7 +4,7 @@ import '../styles/footer.css';
 function Footer() {
   return (
     <footer className="footer">
-      <p>© 2025 John Garnsey. All Rights Reserved.</p>
+      <p>&copy; {new Date().getFullYear()} John Garnsey. All rights reserved.</p>
     </footer>
   );
 }

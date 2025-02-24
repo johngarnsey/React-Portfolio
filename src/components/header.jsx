@@ -5,13 +5,20 @@ import '../styles/header.css';
 function Header() {
   return (
     <header className="header">
-      <nav className="navbar">
-        <div className="logo">react-portfolio</div>
-        <ul className="nav-links">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/" data-aos="fade-down">Home</Link>
+          </li>
+          <li>
+            <Link to="/about" data-aos="fade-down" data-aos-delay="100">About</Link>
+          </li>
+          <li>
+            <Link to="/projects" data-aos="fade-down" data-aos-delay="200">Projects</Link>
+          </li>
+          <li>
+            <Link to="/contact" data-aos="fade-down" data-aos-delay="200">Contact</Link>
+          </li>
         </ul>
       </nav>
     </header>

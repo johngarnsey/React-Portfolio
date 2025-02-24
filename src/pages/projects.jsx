@@ -35,7 +35,6 @@ function Projects() {
 
   return (
     <div className="projects-page">
-      <Header />
       <main>
         <h1>My Projects</h1>
         
@@ -64,7 +63,6 @@ function Projects() {
           ))}
         </div>
       </main>
-      <Footer />
     </div>
   );
 }
