@@ -61,6 +61,17 @@
   justify-content: center;
 }
 
+.close-menu {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--primary-color, #ff4081);
+  cursor: pointer;
+}
+
 .nav-menu.open {
   right: 0;
 }

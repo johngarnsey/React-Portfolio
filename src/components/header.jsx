@@ -25,6 +25,7 @@ function Header() {
 
       {/* Navigation Menu */}
       <nav className={`nav-menu ${isOpen ? 'open' : ''}`}>
+      <button className="close-menu" onClick={toggleMenu}>&times;</button>
         <ul>
           <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
           <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
