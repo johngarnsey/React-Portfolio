@@ -11,21 +11,18 @@ function Header() {
 
   return (
     <header className="header">
-      {/* Brand Name / Logo */}
       <div className="brand">
         <Link to="/">GARNSEY</Link>
       </div>
 
-      {/* Hamburger Icon */}
       <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
       </div>
 
-      {/* Navigation Menu */}
       <nav className={`nav-menu ${isOpen ? 'open' : ''}`}>
-      <button className="close-menu" onClick={toggleMenu}>&times;</button>
+        <button className="close-btn" onClick={toggleMenu}>×</button>
         <ul>
           <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
           <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
