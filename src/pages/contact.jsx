@@ -1,20 +1,23 @@
 import React from 'react';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import '../styles/main.css';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function Contact() {
   return (
-    <div className="contact-container">
-      <h1 className="contact-title">Let's Connect</h1>
-      <p className="contact-subtitle">
-        I'm always open to discussing new opportunities or collaborations.
+    <div className="contact-page">
+      <h1 className="contact-heading">Get in Touch</h1>
+      <p className="contact-description">
+        I'm always open to connecting. Feel free to reach out through any of the platforms below.
       </p>
-      <div className="social-links">
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-          <FaGithub className="social-icon" />
+      <div className="contact-icons">
+        <a href="https://github.com/johngarnsey" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <FaGithub className="contact-icon" />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className="social-icon" />
+        <a href="https://www.linkedin.com/johngarnsey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <FaLinkedin className="contact-icon" />
+        </a>
+        <a href="mailto:john.garnsey@hotmail.com" aria-label="Email">
+          <FaEnvelope className="contact-icon" />
         </a>
       </div>
     </div>
