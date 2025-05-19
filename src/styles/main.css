@@ -226,3 +226,56 @@ body {
     margin-bottom: 1rem;
   }
 }
+
+/* GRADIENT UTILITIES */
+.gradient-hero {
+  background: linear-gradient(135deg, #ff4081, #00e0ff);
+  color: #fff;
+}
+
+.btn-gradient {
+  background: linear-gradient(135deg, #00e0ff, #ff4081);
+  color: white;
+  border: none;
+}
+
+.btn-gradient:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 4px 15px rgba(0, 224, 255, 0.5);
+}
+
+/* DARK MODE SUPPORT */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode .header,
+body.dark-mode .nav-menu {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .brand a,
+body.dark-mode .nav-menu ul li a,
+body.dark-mode .btn,
+body.dark-mode .quote-box {
+  color: #fff;
+}
+
+body.dark-mode .btn {
+  border-color: #00e0ff;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #00e0ff;
+  color: #121212;
+}
+
+body.dark-mode .quote-box {
+  background-color: #333;
+}
+
+body.dark-mode .contact a:hover {
+  color: #00e0ff;
+}
+
