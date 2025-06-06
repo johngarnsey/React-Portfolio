@@ -112,30 +112,27 @@ body {
 /* HERO SECTION */
 .hero {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 5rem 10%;
-  background-color: #fff;
-  gap: 2rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: #fff;
+  min-height: 60vh;
+  text-align: center;
 }
 
-.hero-text {
-  max-width: 50%;
-}
-
-.hero-text h1 {
+.hero h1 {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
-  color: #000;
+  margin-bottom: 1rem;
 }
 
-.hero-text p {
-  font-size: 1.1rem;
-  color: #666;
-  margin-top: 1rem;
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
   line-height: 1.6;
-  max-width: 80%;
 }
 
 /* BUTTON STYLING */
@@ -210,11 +207,15 @@ body {
   }
 
   .hero {
-    flex-direction: column;
-    text-align: center;
+    padding: 3rem 5%;
   }
 
-  .hero-text {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
     max-width: 100%;
   }
 
@@ -279,3 +280,6 @@ body.dark-mode .contact a:hover {
   color: #00e0ff;
 }
 
+body.dark-mode .hero {
+  background: linear-gradient(135deg, #d81b60, #00b0ff);
+}

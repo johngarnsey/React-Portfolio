@@ -12,7 +12,7 @@ import './styles/main.css';
 
 function Home() {
   return (
-    <main style={{ padding: '20px', textAlign: 'center' }}>
+    <main className="hero" data-aos="fade-up">
       <h1 data-aos="fade-up">Welcome to my Portfolio</h1>
       <p data-aos="fade-up" data-aos-delay="100">
         Technology innovator with a comprehensive understanding of software development,
@@ -33,7 +33,6 @@ function App() {
       once: true,    // Whether animation should happen only once per element
     });
   }, []);
-
 
   return (
     <Router>

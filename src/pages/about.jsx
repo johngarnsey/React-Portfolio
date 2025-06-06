@@ -12,7 +12,7 @@ function About() {
           Eager to engage with like-minded individuals, forge meaningful connections, and tackle challenges head-on.
         </p>
         <a
-          href="/resume.pdf"
+          href="/Resume-John Garnsey.pdf"
           download="Resume-John Garnsey.pdf"
           className="btn btn-gradient"
         >
