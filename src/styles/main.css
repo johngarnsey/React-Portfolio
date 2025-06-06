@@ -168,27 +168,96 @@ body {
 }
 
 /* CONTACT PAGE */
-.contact {
+.contact-page {
   padding: 4rem 2rem;
   text-align: center;
 }
 
-.contact h2 {
+.contact-heading {
   font-size: 2.2rem;
   color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.contact-description {
+  font-size: 1.1rem;
+  color: var(--text-color);
   margin-bottom: 2rem;
 }
 
-.contact p,
-.contact a {
-  font-size: 1.1rem;
-  color: var(--text-color);
-  text-decoration: none;
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
   transition: color 0.3s ease;
 }
 
-.contact a:hover {
+.contact-icon:hover {
   color: var(--accent-color);
+}
+
+/* CONTACT FORM */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid var(--button-border-color);
+  border-radius: var(--border-radius);
+  font-family: 'Poppins', sans-serif;
+  resize: vertical;
+}
+
+.form-group textarea {
+  min-height: 120px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(255, 64, 129, 0.3);
+}
+
+.input-error {
+  border-color: #ff4d4d !important;
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+.success-message {
+  color: #28a745;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* RESPONSIVE */
@@ -225,6 +294,14 @@ body {
 
   .btn {
     margin-bottom: 1rem;
+  }
+
+  .contact-page {
+    padding: 2rem 1rem;
+  }
+
+  .contact-form {
+    max-width: 100%;
   }
 }
 
@@ -276,10 +353,28 @@ body.dark-mode .quote-box {
   background-color: #333;
 }
 
-body.dark-mode .contact a:hover {
+body.dark-mode .contact-heading {
+  color: var(--accent-color);
+}
+
+body.dark-mode .contact-description,
+body.dark-mode .form-group label {
+  color: #f0f0f0;
+}
+
+body.dark-mode .contact-icon:hover {
   color: #00e0ff;
 }
 
-body.dark-mode .hero {
-  background: linear-gradient(135deg, #d81b60, #00b0ff);
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+  background-color: #2e2e2e;
+  color: #f0f0f0;
+  border-color: #555;
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 5px rgba(0, 224, 255, 0.3);
 }
